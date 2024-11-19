@@ -1,7 +1,8 @@
 const express = require("express")
+const ConnectDB = require("./config/db")
 const app = express()
 
-
+ConnectDB()
 
 // testing server
 app.get('/', (req, res) => {
